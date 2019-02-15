@@ -6,7 +6,7 @@
 
 * Adafruit Trinket M0
 * USB OTG to host cable or adapter
-* Adafruit nRF52840
+* Adafruit Feather nRF52840
 * USB power bank, 5V out
 * USB keyboard
 
