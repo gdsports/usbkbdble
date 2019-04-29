@@ -1,5 +1,5 @@
 #!/bin/bash
-IDEVER="1.8.8"
+IDEVER="1.8.9"
 WORKDIR="/tmp/autobuild_$$"
 mkdir -p ${WORKDIR}
 # Install Ardino IDE in work directory
@@ -31,3 +31,6 @@ arduino --pref "compiler.warning_level=none" \
 cd ${IDEDIR}/portable/sketchbook
 ln -s ~/Sync/usbkbdble/USBKBDBLE .
 find USBKBDBLE/ -name '*.ino' -print0 | xargs -0 -n 1 $CC
+# Install for SparkFun NRF52840
+cp -R ~/Sync/nRF52840_Breakout_MDBT50Q/Firmware/Arduino/variants/ ${IDEDIR}/portable/packages/adafruit/hardware/nrf52/0.10.1/
+cat ~/Sync/nRF52840_Breakout_MDBT50Q/Firmware/Arduino/sparkfun_boards.txt >>${IDEDIR}/portable/packages/adafruit/hardware/nrf52/0.10.1/boards.txt
