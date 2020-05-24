@@ -28,5 +28,5 @@ at [https://github.com/gdsports/usbhostcopro](https://github.com/gdsports/usbhos
 
 ### Feather nRF52840
 
-USBKBDBLE receives HID reports via its UART TX and sends the reports out the
+USBKBDBLE receives HID reports via its UART RX and sends the reports out the
 BLE keyboard module.
